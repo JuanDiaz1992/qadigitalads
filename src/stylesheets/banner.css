@@ -3,7 +3,11 @@
 .section_banner{
     padding: 0 40px 400px 40px;
     height: 150vh;
+    min-height: 1200px;
+    max-height: 1280px;
     background-image: url(/src/img/looper-pattern.svg);
+    background-repeat: no-repeat;
+    background-position:left;
     display: flex;
     align-items: flex-start;
 }
@@ -75,7 +79,10 @@
 .card1{
     position: absolute;
     left: 40%;
-    bottom: 10%;
+    bottom: 20%;
+}
+.card1 img{
+    height: 180px !important;
 }
 .card2{
     position: absolute;
@@ -89,11 +96,11 @@
 .card3{
     position: absolute;
     left: 65%;
-    bottom: 40%;
+    top: 40%;
 }
 .chip1{
     position: absolute;
-    bottom: 50%;
+    top: 50%;
     right: 55%;
 
 }
@@ -126,6 +133,10 @@
     .section_banner{
         height: 80vh;
         background-position: center;
+    }
+    .section_banner_div{
+        padding-top: 100px;
+        justify-content:flex-start
     }
     .section_banner_div--2{
         display: none;
@@ -160,4 +171,5 @@
     #root > div > header > nav > header > div{
         justify-content: center;
     }
+
 }

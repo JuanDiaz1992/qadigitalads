@@ -26,7 +26,7 @@ function BannerRight() {
             }}
             style={{ display: 'inline-block' }}
       >
-        <Card1 img={img1} text1={"Bmalandscaping"} text2={language?"See":"Ver"} />
+        <Card1 img={img1} text1={"Bmalandscaping"} text2={language?"See":"Ver"} linkTo={"https://bmalandscaping.com/"}/>
       </motion.div>
 
       <motion.div
@@ -41,7 +41,7 @@ function BannerRight() {
             }}
             style={{ display: 'inline-block' }}
       >
-        <Card1 img={img2} text1={"Greenmanlands..."} text2={language?"See":"Ver"}/>
+        <Card1 img={img2} linkTo={"https://greenmanlandscapingmaryland.com/"} text1={"Greenmanlands..."} text2={language?"See":"Ver" }/>
       </motion.div>
 
       <motion.div

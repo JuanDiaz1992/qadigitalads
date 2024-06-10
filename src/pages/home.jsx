@@ -1,6 +1,7 @@
 import { Banner } from "../components/banner";
 import NavBar from "../components/navBar";
 import Services from "../components/services";
+import Customers from "../components/customers";
 function Home(){
     return(
         <>
@@ -11,6 +12,7 @@ function Home(){
             <NavBar/>
             <Banner/>
             <Services/>
+            <Customers/>
         </>
     );
 

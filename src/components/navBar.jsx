@@ -9,12 +9,12 @@ import {
   NavbarMenu,
 } from "@nextui-org/react";
 import { useTheme } from "next-themes";
-import { ThemeSwitcher } from "./ThemeSwitcher";
+import { ThemeSwitcher } from "./nav_components/ThemeSwitcher";
 import spanish from "../img/spanish.webp";
 import english from "../img/english.webp";
 import { LanguageContext } from "../context/languajeProvider";
 import { useContext } from "react";
-import SvgLogo from "./logo"
+import SvgLogo from "./nav_components/logo"
 
 function NavBar() {
   const { language, setLanguage } = useContext(LanguageContext);

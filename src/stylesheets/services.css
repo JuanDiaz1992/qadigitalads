@@ -17,6 +17,9 @@
     color: rgb(255 78 205 / var(--tw-text-opacity));
 }
 
+.card_body{
+    height: 300px !important;
+}
 .section_services{
     position: relative;
     width: 100%;
@@ -30,7 +33,28 @@
     gap: 15px;
     position: absolute;
     top: -500px;
+    flex-wrap: wrap;
 }
 .button_card1{
     width: 80px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .section_services_div{
+        top: -700px;
+    }
+}
+@media only screen and (max-width: 639px) {
+    .section_services{
+        margin-bottom: 150px;
+        height: fit-content;
+    }
+    .card_body{
+        width: 100%;
+        max-width:none !important;
+        height: 220px !important;
+    }
+    .card1_container{
+        width: 95%;
+    }
 }
