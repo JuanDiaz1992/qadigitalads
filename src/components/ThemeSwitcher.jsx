@@ -27,7 +27,7 @@ export function ThemeSwitcher() {
       <Switch
         defaultSelected={theme === "dark"}
         size="lg"
-        color="success"
+        color="succes"
         startContent={<CiLight />}
         endContent={<MdDarkMode />}
         onChange={handleThemeChange}

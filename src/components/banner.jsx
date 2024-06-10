@@ -1,5 +1,6 @@
 import BannerLeft from "./banner_components/bannerLeft";
 import BannerRight from "./banner_components/bannerRight";
+import "../stylesheets/banner.css";
 
 export function Banner() {
 

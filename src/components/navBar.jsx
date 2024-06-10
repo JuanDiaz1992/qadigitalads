@@ -14,7 +14,7 @@ import spanish from "../img/spanish.webp";
 import english from "../img/english.webp";
 import { LanguageContext } from "../context/languajeProvider";
 import { useContext } from "react";
-
+import SvgLogo from "./logo"
 
 function NavBar() {
   const { language, setLanguage } = useContext(LanguageContext);
@@ -31,35 +31,7 @@ function NavBar() {
             <NavbarMenuToggle />
           </NavbarContent>
           <NavbarBrand>
-            <svg
-              className="logo_nav"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 50 50"
-              xmlSpace="preserve"
-            >
-              <g>
-                <path
-                  fill={theme === "dark" ? "#FFFFFF" : "#000000"}
-                  d="M30.5,19l1,1.1l-2.3,2.2l-1.2-1.4c-0.9,0.4-2,0.7-3.1,0.7c-4.2,0-7.4-3.5-7.4-7.4S20.6,7,24.8,7
-              c4.2,0,7.4,3.4,7.4,7.3C32.3,16.1,31.6,17.7,30.5,19z M24.8,18.5c0.3,0,0.6,0,0.9-0.1l-2-2.2l2.4-2.2l2.2,2.5
-              c0.4-0.6,0.6-1.4,0.6-2.2c0-2.3-1.7-4.1-4-4.1c-2.3,0-4,1.8-4,4.1C20.8,16.5,22.6,18.5,24.8,18.5z"
-                />
-                <path
-                  fill={theme === "dark" ? "#FFFFFF" : "#000000"}
-                  d="M28.4,40.3h-6.8l-0.9,2.2H17l6-14.2h3.8l6.1,14.2h-3.6L28.4,40.3z M27.2,37.5L25,32.2l-2.2,5.3H27.2z"
-                />
-                <path
-                  fill={theme === "dark" ? "#FFFFFF" : "#000000"}
-                  d="M33.3,23.6H16.7v2.9h16.6V23.6z"
-                />
-                <path
-                  fillRule="evenodd"
-                  fill={theme === "dark" ? "#FFFFFF" : "#000000"}
-                  d="M47.2,2.8H2.8v44.4h44.4V2.8z M0,0v50h50V0H0z"
-                />
-              </g>
-            </svg>
+          <SvgLogo theme={theme}/>
           </NavbarBrand>
           <NavbarContent className="hidden sm:flex gap-4" justify="center">
             <NavbarItem>
